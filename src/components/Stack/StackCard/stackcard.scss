@@ -1,0 +1,55 @@
+.stack__link{
+    text-decoration: none; 
+    color: inherit;  
+}
+
+.stack__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    background-color: var(--first-color);
+    border-radius: 0.5rem;
+    color: var(--text-main-color);
+    transition: all 0.2s ease-in;
+    
+    &-left{
+        display: flex;
+        flex-direction: row;
+    }
+    &-icon{
+        width: 85px;
+        height: 85px;
+        padding: 12px;
+        &--image{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 0.5rem;
+        }
+    }
+    &-text{
+        padding-top: 12px;
+    }
+    &-description{
+        color: #777;
+    }
+    &-arrow--container{
+        margin-right: 12px;
+    }
+    &-arrow{
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease-in-out; 
+        color: #777;
+
+    }
+
+}
+.stack__card:hover{
+    background-color: #272727;
+}
+.stack__card:hover .stack__card-arrow{
+    transform: rotate(-90deg);
+}

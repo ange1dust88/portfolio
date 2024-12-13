@@ -1,0 +1,16 @@
+.stack{
+
+    &__card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 10px; 
+    }
+
+
+
+    &__subtitle{
+        color: var(--text-main-color);
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
