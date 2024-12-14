@@ -1,0 +1,39 @@
+.contact__container{
+    color: var(--text-main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contact{
+    &__title{
+        font-size: 10rem;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #6a0dad, #9b59b6, #800080);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__desc{
+        max-width: 70%;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__links{
+        margin-top: 1rem;
+        display: flex;
+        gap: 2rem;
+        font-size: 1.4rem;
+    }
+    &__link a {
+        color: #6a0dad;
+        text-decoration: none;
+
+    }
+    &__link-icon{
+        margin-right: 0.2rem;
+    }
+}
